@@ -1,18 +1,19 @@
-﻿@{
+﻿@model Survey
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <h1>Enter info for some Cookies!</h1>
 
-<form action="/result" method="POST" class="border border border-dark border-1 rounded p-3">
+<form asp-controller="Home" asp-action="Create" method="POST" class="border border border-dark border-1 rounded p-3">
     <div class="mb-3">
-        <label for="name">Your Name: </label>
-        <input type="text" name="name" class="form-control w-25">
+        <label asp-for="Name">Your Name: </label>
+        <input asp-for="Name" class="form-control w-25">
     </div>
 
     <div class="mb-3">
-        <label for="location">Location: </label>
-        <select name="location" class="form-control w-25">
+        <label asp-for="Location">Location: </label>
+        <select asp-for="Location" class="form-control w-25">
             <option value="San Jose"> San Jose</option>
             <option value="Los Angeles"> Los Angeles</option>
             <option value="Bellevue"> Bellevue</option>
@@ -20,8 +21,8 @@
     </div>
 
     <div class="mb-3">
-        <label for="language">Fav Language: </label>
-        <select name="language" class="form-control w-25">
+        <label asp-for="Language">Fav Language: </label>
+        <select asp-for="Language" class="form-control w-25">
             <option value="C#"> C#</option>
             <option value="Java"> Java</option>
             <option value="Python"> Python</option>
@@ -30,8 +31,8 @@
     </div>
 
     <div class="mb-3">
-        <label for="comment" class="text-align-top text-align-center">Comment: </label>
-        <textarea name="comment" cols="50" rows="5" class="form-control"></textarea>
+        <label asp-for="Comment" class="text-align-top text-align-center">Comment: </label>
+        <textarea asp-for="Comment" cols="50" rows="5" class="form-control"></textarea>
     </div>
 
     <button class="btn btn-outline-primary">Send!</button>

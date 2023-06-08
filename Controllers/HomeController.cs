@@ -20,14 +20,19 @@ public class HomeController : Controller
     }
 
     [HttpPost("/result")]
-    public IActionResult Result(string name, string location, string language, string comment = "nothing here")
+    public IActionResult Create(Survey newStudent)
     {
-        ViewBag.Name = name;
-        ViewBag.Location = location;
-        ViewBag.Language = language;
-        ViewBag.Comment = comment;
-        return View();
+        return View("Result", newStudent);
     }
+    // [HttpPost("/result")]
+    // public IActionResult Result(string name, string location, string language, string comment = "nothing here")
+    // {
+    //     ViewBag.Name = name;
+    //     ViewBag.Location = location;
+    //     ViewBag.Language = language;
+    //     ViewBag.Comment = comment;
+    //     return View();
+    // }
 
     // [HttpPost("/result")]
     // public IActionResult Result()

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\TNguy\\OneDrive\\Documents\\CodingDojoWebFun\\CSharp\\ASPDotNetCore\\DojoSurvey\\DojoSurvey.csproj": {}
+    "C:\\Users\\TNguy\\OneDrive\\Documents\\CodingDojoWebFun\\CSharp\\ASPDotNetCore\\DojoSurvey\\DojoSurvey.csproj": {}
   },
   "projects": {
-    "c:\\Users\\TNguy\\OneDrive\\Documents\\CodingDojoWebFun\\CSharp\\ASPDotNetCore\\DojoSurvey\\DojoSurvey.csproj": {
+    "C:\\Users\\TNguy\\OneDrive\\Documents\\CodingDojoWebFun\\CSharp\\ASPDotNetCore\\DojoSurvey\\DojoSurvey.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\TNguy\\OneDrive\\Documents\\CodingDojoWebFun\\CSharp\\ASPDotNetCore\\DojoSurvey\\DojoSurvey.csproj",
+        "projectUniqueName": "C:\\Users\\TNguy\\OneDrive\\Documents\\CodingDojoWebFun\\CSharp\\ASPDotNetCore\\DojoSurvey\\DojoSurvey.csproj",
         "projectName": "DojoSurvey",
-        "projectPath": "c:\\Users\\TNguy\\OneDrive\\Documents\\CodingDojoWebFun\\CSharp\\ASPDotNetCore\\DojoSurvey\\DojoSurvey.csproj",
+        "projectPath": "C:\\Users\\TNguy\\OneDrive\\Documents\\CodingDojoWebFun\\CSharp\\ASPDotNetCore\\DojoSurvey\\DojoSurvey.csproj",
         "packagesPath": "C:\\Users\\TNguy\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\TNguy\\OneDrive\\Documents\\CodingDojoWebFun\\CSharp\\ASPDotNetCore\\DojoSurvey\\obj\\",
+        "outputPath": "C:\\Users\\TNguy\\OneDrive\\Documents\\CodingDojoWebFun\\CSharp\\ASPDotNetCore\\DojoSurvey\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TNguy\\AppData\\Roaming\\NuGet\\NuGet.Config"

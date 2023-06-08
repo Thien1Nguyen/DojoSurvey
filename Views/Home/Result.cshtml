@@ -1,13 +1,14 @@
+@model Survey
 @{
     ViewData["Result"] = "Result Page";
 }
 
 <h1 class="text-decoration-underline">Submitted Info</h1>
 <div class="border border border-dark border-1 rounded p-3">
-    <p>Name: @ViewBag.Name</p>
-    <p> Dojo Location: @ViewBag.Location</p>
-    <p> Favorite Language: @ViewBag.Language</p>
-    <p> Comment(optional): @ViewBag.Comment</p>
+    <p>Name: @Model.Name</p>
+    <p> Dojo Location: @Model.Location</p>
+    <p> Favorite Language: @Model.Language</p>
+    <p> Comment(optional): @Model.Comment</p>
 
     <a href="/" class="btn btn-warning">Go Back</a>
 </div>
