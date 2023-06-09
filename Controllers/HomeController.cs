@@ -19,20 +19,22 @@ public class HomeController : Controller
         return View();
     }
 
-    [HttpPost("/result")]
+    static Survey? student;
+    [HttpPost("create")]
     public IActionResult Create(Survey newStudent)
     {
-        return View("Result", newStudent);
+        if(!ModelState.IsValid){
+            return View("Index");
+        }
+        student = newStudent;
+        return RedirectToAction("Result");
     }
-    // [HttpPost("/result")]
-    // public IActionResult Result(string name, string location, string language, string comment = "nothing here")
-    // {
-    //     ViewBag.Name = name;
-    //     ViewBag.Location = location;
-    //     ViewBag.Language = language;
-    //     ViewBag.Comment = comment;
-    //     return View();
-    // }
+
+    [HttpGet("result")]
+    public IActionResult Result()
+    {
+        return View(student);
+    }
 
     // [HttpPost("/result")]
     // public IActionResult Result()
