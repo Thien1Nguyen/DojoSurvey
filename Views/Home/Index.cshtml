@@ -3,43 +3,45 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h1>Enter info for some Cookies!</h1>
 
-<form asp-controller="Home" asp-action="Create" method="POST" class="border border border-dark border-1 rounded p-3">
-    <div class="mb-3">
-        <label asp-for="Name">Your Name: <span class="text-danger" asp-validation-for="Name"></span> </label>
-        <input asp-for="Name" class="form-control w-25">
-        
-    </div>
+<div class="w-25 regContainer">
+    <h3>Build Your Character</h3>
+    <form asp-controller="Home" asp-action="Create" method="POST"
+        class="border border border-dark border-1 rounded p-3">
+        <div class="mb-3">
+            <label asp-for="Name">Character Name <span class="text-danger" asp-validation-for="Name"></span> </label>
+            <input asp-for="Name" class="form-control w-50">
+        </div>
 
-    <div class="mb-3">
-        <label asp-for="Location">Location: </label>
-        <span class="text-danger" asp-validation-for="Location"></span>
-        <select asp-for="Location" class="form-control w-25">
-            <option value="" disabled selected>Select your Location</option>
-            <option value="San Jose"> San Jose</option>
-            <option value="Los Angeles"> Los Angeles</option>
-            <option value="Bellevue"> Bellevue</option>
-        </select>
-    </div>
+        <div class="mb-3">
+            <label asp-for="Location">Starting Location </label>
+            <span class="text-danger" asp-validation-for="Location"></span>
+            <select asp-for="Location" class="form-control w-50">
+                <option value="" disabled selected>Select your Location</option>
+                <option value="San Jose"> San Jose</option>
+                <option value="Los Angeles"> Los Angeles</option>
+                <option value="Bellevue"> Bellevue</option>
+            </select>
+        </div>
 
-    <div class="mb-3">
-        <label asp-for="Language">Fav Language: </label>
-        <span class="text-danger" asp-validation-for="Language"></span>
-        <select asp-for="Language" class="form-control w-25">
-            <option value="" disabled selected>Select a Language</option>
-            <option value="C#"> C#</option>
-            <option value="Java"> Java</option>
-            <option value="Python"> Python</option>
-            <option value="English"> English</option>
-        </select>
-    </div>
+        <div class="mb-3">
+            <label asp-for="Language">Language Spoken </label>
+            <span class="text-danger" asp-validation-for="Language"></span>
+            <select asp-for="Language" class="form-control w-50">
+                <option value="" disabled selected>Select a Language</option>
+                <option value="C#"> C#</option>
+                <option value="Java"> Java</option>
+                <option value="Python"> Python</option>
+                <option value="English"> English</option>
+            </select>
+        </div>
 
-    <div class="mb-3">
-        <label asp-for="Comment" class="text-align-top text-align-center">Comment: </label>
-        <span class="text-danger" asp-validation-for="Comment"></span>
-        <textarea asp-for="Comment" cols="50" rows="5" class="form-control"></textarea>
-    </div>
+        <div class="mb-3">
+            <label asp-for="Comment" class="text-align-top text-align-center">Lore: </label>
+            <span class="text-danger" asp-validation-for="Comment"></span>
+            <textarea asp-for="Comment" cols="50" rows="5" class="form-control"></textarea>
+        </div>
 
-    <button class="btn btn-outline-primary">Send!</button>
-</form>
+        <button class="btn btn-danger w-25 createBtn">Build</button>
+    </form>
+</div>

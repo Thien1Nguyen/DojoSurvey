@@ -19,7 +19,9 @@ public class HomeController : Controller
         return View();
     }
 
+    // A student var to hold newStudent data.
     static Survey? student;
+
     [HttpPost("create")]
     public IActionResult Create(Survey newStudent)
     {
@@ -36,11 +38,6 @@ public class HomeController : Controller
         return View(student);
     }
 
-    // [HttpPost("/result")]
-    // public IActionResult Result()
-    // {
-    //     return View();
-    // }
 
     [HttpGet("{**path}")]
     public RedirectResult Unknown()
